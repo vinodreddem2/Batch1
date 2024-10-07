@@ -7,13 +7,15 @@ from django.shortcuts import get_object_or_404,redirect
 def index(request):
     return render(request,'index.html')
 
+# CRUD operrations on Tweets  
+# ----------------------------
+# Reading the Tweets
 def tweet_list(request):
     # Get all the tweets
     tweets = Tweet.objects.all().order_by('-created_at')
     
     return render(request,'tweet_list.html',{'tweets':tweets})
-
-
+# Creating the Tweets
 def tweet_create(request):
     # If user has filled the form and sent the request
     if request.method=='POST':
@@ -35,7 +37,7 @@ def tweet_create(request):
     
     # Finally rendering the form 
     return render(request,'tweet_form.html',{'form':form})
-
+# Editing the Tweets
 def tweet_edit(request,tweet_id):
     
     # If there is already a tweet get it , only if the person wanted to edit is the original user 
@@ -58,8 +60,7 @@ def tweet_edit(request,tweet_id):
         form = TweetForm(instance=tweet)
         
     return render(request,'tweet_form.html',{'form':form})
-
-
+# Deleting the Tweets
 def tweet_delete(request,tweet_id):
     
     tweet = get_object_or_404(Tweet,pk=tweet_id,user=request.user)
