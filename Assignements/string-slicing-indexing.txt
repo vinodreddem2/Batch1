@@ -1,0 +1,20 @@
+1]input:-"Python Programming"
+   output:-"Python"
+2]WAP reverse the string using slicing.
+3]WAP extracting every 2nd character.
+EX-
+     input:-"abcdefghijkl"
+     output:-"bdfhjl"
+4]Finding the position of substring.
+ -->Write a program that finds the index of the substring "Prog" in the string "Python Programming is fun".
+5]WAP to replace "Python" with "Java" in the string "I love Python!".
+6]WAP that checks if a string is a palindrome.
+7] WAP that counts the number of vowels in a string.
+8]Replace Characters at Specific Positions.
+  -->Replace the 2nd and 4th characters in the string "abcdef" with "X".
+        input:- "abcdef"
+        output:-aXcXef
+9] Extract and Reverse Substring.
+  input:-"Python Programming"
+  output:-"thon" 
+10]WAP to checks if the substring  is present in the string or not.
