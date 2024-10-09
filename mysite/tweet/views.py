@@ -11,8 +11,8 @@ def index(request):
 # ----------------------------
 # Reading the Tweets
 def tweet_list(request):
-    # Get all the tweets
-    tweets = Tweet.objects.all().order_by('-created_at')
+    # Get all the tweets     ---  objects.all() ----> Returns list 
+    tweets = Tweet.objects.all().order_by('-created_at') 
     
     return render(request,'tweet_list.html',{'tweets':tweets})
 # Creating the Tweets
@@ -38,6 +38,8 @@ def tweet_create(request):
     # Finally rendering the form 
     return render(request,'tweet_form.html',{'form':form})
 # Editing the Tweets
+
+# def tweet_edit(request,pageName/pageId):  pageName/pageId/... ----> These should be same in the urls     
 def tweet_edit(request,tweet_id):
     
     # If there is already a tweet get it , only if the person wanted to edit is the original user 
