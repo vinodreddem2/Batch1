@@ -1,0 +1,102 @@
+You are working with a DataFrame containing sales data for a retail company. The DataFrame has the following columns:
+
+Product (string): The name of the product sold.
+Sales (numeric): The total sales amount for each product.
+Date (datetime): The date when the sales were recorded.
+The company wants to analyze the sales data and needs the DataFrame to be sorted first by the Date column in ascending order and then by the Sales column in descending order. 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+dataset we have ..how to identify the sentiment analysis in python 
+------------------------------------------------------------------------------------------------------------------------------------
+Common deployment stategies for python applications
+------------------------------------------------------------------------------------------------------------------------------------
+Common architectural patterns in python applications 
+----------------------------------------------------------------------------------------------------------------------------------
+You are developing a python application of an expense tracker to help users manage their personal
+finances that generate a report showing the user's total spending over a specified period. How can you acheive this? 
+----------------------------------------------------------------------------------------------------------------------------------
+def decorator_sample(func):
+  def decorator_hook(*args,**kwargs):
+    print(“Before the function call”)
+    result=func(*args,**kwargs)
+    print(“After the function call”)
+    return result
+  return decorator hook
+ 
+@decorator_sample
+def product(x,y):
+  return x*y
+print(product(3,3))
+Advanced 
+----------------------------------------------------------------------------------------------------------------------------------
+How important API documentations are important to the clients and third party services 
+----------------------------------------------------------------------------------------------------------------------------------
+CREATE TABLE Client (
+    client_id INT PRIMARY KEY,
+    client_name VARCHAR(255) NOT NULL,
+    client_email VARCHAR(255) NOT NULL
+);
+-- Create ID Table
+CREATE TABLE ID (
+    person_id INT PRIMARY KEY,
+    client_id INT,
+    FOREIGN KEY (client_id) REFERENCES Client(client_id)
+);
+
+-- Create Deals Table
+CREATE TABLE Deals (
+    deal_id INT PRIMARY KEY,
+    client_id INT,
+    deal_status VARCHAR(50) NOT NULL,
+    deal_amount DECIMAL(10, 2) NOT NULL,
+    FOREIGN KEY (client_id) REFERENCES Client(client_id)
+);
+
+This is the table statucre
+ChatGPT said:
+
+
+We are given three tables (Client, ID, and Deals) :-
+
+1. Client Table: Holds client details.
+2. ID Table: Maps person_id to client_id. 3. Deals Table: Contains deal information, including the status of each deal.
+
+Query to retrieve the total deal amount for each client (return person_id, client_id, client_name, sum of the deal_amount).
+
+-----------------------------------------------------------------------------------------------------------------------------------
+We are given three tables (Client, ID, and Deals) :-
+
+1. Client Table: Holds client details. 2. ID Table: Maps person_id to client_id. 3. Deals Table: Contains deal information, including the status of each deal.
+
+Query to find the number of closed deals for a person (return person_id and Count of closed deals) .
+
+Resource:-Link
+----------------------------------------------------------------------------------------------------------------------------------
+Write an API call by calling the given API and Populate the data as per the requirement
+https://raw.githubusercontent.com/prust/wikipedia-movie-data/master/movies.json
+List the movies that starts with "After"
+----------------------------------------------------------------------------------------------------------------------------------
+Python code
+
+Write a Code for the below requirement Sample Inputs & Outputs
+Input :
+List1 = [1,2,3,4,5,6,7,8,9,10] and Split_Value = 3
+Expected Output is (Split Like this)
+[[1,2,3],[4,5,6],[7,8,9],[10]]
+
+Input :
+List1 = [1,2,3,4,5,6,7,8,9,10] and Split_Value = 5
+Expected Output is (Split Like this)
+[[1,2,3,4,5],[6,7,8,9,10]]
+
+python program
+
+----------------------------------------------------------------------------------------------------------------------------------
+Input
+Input= ["eat", "tea", "tan", "ate", "nat", "bat"]
+Output
+Output= [ ["ate", "eat","tea"], ["nat","tan"], ["bat"] ]
+
+Without using dict?
+----------------------------------------------------------------------------------------------------------------------------------
+
+
