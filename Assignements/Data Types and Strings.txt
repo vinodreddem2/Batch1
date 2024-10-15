@@ -1,0 +1,22 @@
+1. Write a program that takes two integers as input and prints their sum, difference, product, and quotient.
+2. Create a program that takes a float as input and prints it rounded to two decimal places.
+3. Write a function that takes two strings as input and returns a single string that combines them with a space in between.
+4. Create a function that checks if a given string is a palindrome (reads the same forwards and backwards) and returns True or False.
+5. Write a function that takes a string as input and returns the string reversed.
+6. Write a function that takes a string and returns a new string where all uppercase letters are converted to lowercase and vice versa.
+7. rite a program that checks if one string is a substring of another string and prints the result.
+8.Create a function that takes a string and removes all whitespace characters (spaces, tabs, etc.) from it.
+9. Write a function that counts the number of words in a given string. Assume words are separated by spaces.
+10. Implement a function that compresses a string by replacing consecutive repeated characters with a single character followed by the count of occurrences (e.g., "aaabb" becomes "a3b2").
+11. 2. Write a Python program to count the number of characters (character frequency) in a string.
+Sample String : google.com'
+Expected Result : {'g': 2, 'o': 3, 'l': 1, 'e': 1, '.': 1, 'c': 1, 'm': 1}
+
+12. 5. Write a Python program to get a single string from two given strings, separated by a space and swap the first two characters of each string.
+Sample String : 'abc', 'xyz'
+Expected Result : 'xyc abz'
+
+13. str = "My salary is 7000";
+print(str.isalnum())
+
+14. 
