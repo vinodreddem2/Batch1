@@ -21,7 +21,8 @@ def person(request):
     # if we want to get the data 
     if request.method=="GET":
         # Query the data from the database ---> Return QuerySet 
-        data = Person.objects.all() 
+        # data = Person.objects.all()
+        data = Person.objects.filter(color__isnull=False) 
         # Serialize the queryset into json format
         serializer = PersonSerializer(data,many=True)
        
